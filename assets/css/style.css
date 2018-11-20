@@ -1,0 +1,33 @@
+/*Crystal pictures sytle*/
+.crystalPics{
+
+    width: 100%;
+    height: 300px;;
+}
+/*Main body conainer*/
+.main-container{
+    width: 968px;
+    margin: 5%;
+}
+/*Crystal Picture container */
+#container{
+
+    width: 100%;
+    margin: 5% 25% 0% 25%;
+}
+.card-body{
+    font-size: 20px;
+    height:100px;
+    margin: 5%;
+}
+/*Winning Number Card*/
+#Number{
+
+    margin-top: 42px;
+}
+/*Guess, Wins and Loses card margin*/
+#guessCounter{
+    margin-top: 80px;
+    margin-left: 47px;
+
+}

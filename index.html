@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chrystal Number Guess</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body class="main-container">
+
+    <section id="container">
+        <dv class="row">
+            <!---Blue Crystal Pc-->
+            <div class=" col-sm-3">
+                <img class="crystalPics" src="assets/images/crystal1.jpg" alt="crystal">
+            </div> 
+             <!---Current Guess Count-->
+             <div class="col-sm-5">
+                    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;" id="guessCounter">
+                        <div class="card-body">
+                            <p class="card-text">Wins: <a id=""></a> </p>
+                            <p class="card-text">Losses: <a id=""></a> </p>
+                        </div>
+                    </div>
+                </div>
+
+            <!----Green Crystal Pic-->
+                <div class="col-sm-4">
+            <img class="crystalPics" src="assets/images/crystal2.jpg" alt="crystal"> 
+                </div>
+        </dv>
+        <!---Winning Number Card-->
+        <div id = "Number">
+            <div class="row">
+                <!---Empty column to push winning number card over to the right-->
+                <div class="col-sm-4"></div>
+                    <div class="col-sm-3">
+                        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                  <div class="card-body">
+                    <p class="card-text">Winning Number: <a id="winningNumber"></a> </p>
+                  </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id ="Number">
+            <div class="row">
+                <!---Purple Crystal Pc-->
+                <div class=" col-sm-3">
+                    <img class="crystalPics" src="assets/images/crystal3.jpg" alt="crystal">
+                </div> 
+                <!---Current Guess Count-->
+                <div class="col-sm-5">
+                    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;" id="guessCounter">
+                        <div class="card-body">
+                            <p class="card-text">Current Guess Score: <a id=""></a> </p>
+                        </div>
+                    </div>
+                </div>
+                <!----Red Crystal Pic-->
+                <div class="col-sm-4">
+                    <img class="crystalPics" src="assets/images/crystal4.jpg" alt="crystal"> 
+                </div>  
+            </div>               
+        </div>
+    </section>
+    
+
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>
