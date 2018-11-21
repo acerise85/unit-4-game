@@ -1,5 +1,10 @@
 //Variables
-var crystalPics = 'assets/images/crystal' + '.jpg';
+var crystalPics = [
+    {name: 'blue', image:'crystal1.jpg'},
+    {name: 'green', image:'crystal2.jpg'},
+    {name: 'purple', image:'crystal3.jpg'},
+    {name: 'red', image:'crystal4.jpg'},
+]
 var win = 0;
 var lose = 0;
 var counter = 0;
@@ -15,21 +20,33 @@ document.getElementById('winningNumber').innerHTML = randomNumber;
 
 var crystalValue = [0, 0, 0, 0];
 
+
 var crystalNumbers = Math.floor(Math.random() * (guessMaxnumber - guessMinnumber) + guessMinnumber);
 
 
 
-for(var i = 0; i < crystalValue.length; i++){
+for(var i = 0; i < crystalPics.length; i++){
 
-    crystalValue.length = 3;
-    
-    crystalValue.push(crystalNumbers);
+   var crystal = $("<img>");
+
+    crystal.attr("numbers", crystalNumbers[i]);
         console.log(crystalNumbers);
-    var crystalPics = $("<img>");
+        console.log(crystalPics);
 
-    
+        if(crystalNumbers === crystalNumbers){
 
+            var crystalNumbers = Math.floor(Math.random() * (guessMaxnumber - guessMinnumber) + guessMinnumber);
+
+        }
+       
 }
+
+$('crystal').on('click',function(){
+
+
+
+})
+
 
    
 
