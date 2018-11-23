@@ -1,57 +1,76 @@
 //Variables
-var crystalPics = [
-    {name: 'blue', image:'crystal1.jpg'},
-    {name: 'green', image:'crystal2.jpg'},
-    {name: 'purple', image:'crystal3.jpg'},
-    {name: 'red', image:'crystal4.jpg'},
-]
 var win = 0;
 var lose = 0;
-var counter = 0;
-var minNumber = 19;
-var maxNumber = 120;
-var guessMinnumber = 1;
-var guessMaxnumber = 12;
+var guessSum = 0;
+var blueCrystal;
+var greenCyrstal;
+var purpleCyrstal;
+var redCrystal;
 
-var randomNumber = Math.floor(Math.random() * (maxNumber - minNumber +1) + minNumber);
+var randomNumber = Math.floor(Math.random() * (120 - 19 +1) + 19);
 var winningNumber = 0;
 $('#winningNumber').text(randomNumber);
 document.getElementById('winningNumber').innerHTML = randomNumber;
 
-var crystalValue = [0, 0, 0, 0];
 
 
-var crystalNumbers = Math.floor(Math.random() * (guessMaxnumber - guessMinnumber) + guessMinnumber);
+var blueNumbers = Math.floor(Math.random() * (12 - 1) + 1);
+var blue = 0;
+var blueCounter = 0;
+$('#blueCrystal').on('click',function(){
+ 
+    blue = blueNumbers;    
+    blueCounter +=blue;
+    
 
 
+     console.log(blueCounter);
+    // console.log(blue);
 
-for(var i = 0; i < crystalPics.length; i++){
-
-   var crystal = $("<img>");
-
-    crystal.attr("numbers", crystalNumbers[i]);
-        console.log(crystalNumbers);
-        console.log(crystalPics);
-
-        if(crystalNumbers === crystalNumbers){
-
-            var crystalNumbers = Math.floor(Math.random() * (guessMaxnumber - guessMinnumber) + guessMinnumber);
-
-        }
-       
-}
-
-$('crystal').on('click',function(){
+    
+})
+var greenNumbers = Math.floor(Math.random() * (12 - 1) + 1);
+var green = 0;
+var greenCounter = 0;
+$('#greenCrystal').on('click',function(){
 
 
+    if (blueNumbers === greenNumbers){
+
+     greenNumbers = Math.floor(Math.random() * (12 - 1) + 1);
+
+    }
+
+     green = greenNumbers;
+    greenCounter +=green;
+    
+
+   console.log(greenCounter);
+    //  console.log(green);   
+    
+})
+
+var sum = Number(blueCounter + greenCounter);
+var counter = 0;
+var guessCounter = 0;
+
+$('#guessSum').on('click', function(){
+
+    var counter = sum;
+    guessCounter += counter;
+    console.log(guessCounter);
 
 })
 
 
-   
+if ( blueCounter === randomNumber){
 
+    alert("Your won!" + winningNumber);
+}
+else if (blueCounter >= randomNumber){
 
-
+    alert("You lost" + guessCounter);
+}
 
 
 
