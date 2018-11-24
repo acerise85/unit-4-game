@@ -5,11 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Chrystal Number Guess</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" /> 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body class="main-container">
 
@@ -23,8 +21,8 @@
              <div class="col-sm-5">
                     <div class="card text-white bg-dark mb-3" style="max-width: 18rem;" id="guessCounter">
                         <div class="card-body">
-                            <p class="card-text">Wins: <a id=""></a> </p>
-                            <p class="card-text">Losses: <a id=""></a> </p>
+                            <p class="card-text">Wins: <a id="win"></a> </p>
+                            <p class="card-text">Losses: <a id="lose"></a> </p>
                         </div>
                     </div>
                 </div>
@@ -52,20 +50,20 @@
             <div class="row">
                 <!---Purple Crystal Pc-->
                 <div class=" col-sm-3">
-                    <img class="crystalPics" src="assets/images/crystal3.jpg" alt="crystal">
+                    <img class="crystalPics" id = "purpleCrystal" src="assets/images/crystal3.jpg" alt="crystal">
                 </div> 
                 <!---Current Guess Count-->
                 <div class="col-sm-5">
                     <div class="card text-white bg-dark mb-3" style="max-width: 18rem;" id="guessCounter">
                         <div class="card-body">
-                            <p class="card-text">Current Guess Score: <a id="" ></a>  </p>
+                            <p class="card-text">Current Guess Score: <a id="guessSum"></a>  </p>
                             
                         </div>
                     </div>
                 </div>
                 <!----Red Crystal Pic-->
                 <div class="col-sm-4">
-                    <img class="crystalPics" src="assets/images/crystal4.jpg" alt="crystal"> 
+                    <img class="crystalPics" id = "redCrystal" src="assets/images/crystal4.jpg" alt="crystal"> 
                 </div>  
             </div>               
         </div>
