@@ -1,4 +1,5 @@
 /*Crystal pictures sytle*/
+
 .crystalPics{
 
     width: 100%;
@@ -14,6 +15,9 @@
 
     width: 100%;
     margin: 5% 25% 0% 25%;
+    border: 5px;
+    border-style: outset;
+    border-color: blue;
 }
 .card-body{
     font-size: 20px;
@@ -29,5 +33,16 @@
 #guessCounter{
     margin-top: 80px;
     margin-left: 47px;
-
 }
+.crystalName{
+
+    text-align: center;
+    border: 5px;
+    border-style: outset;
+    border-color: blue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: blue;
+    margin-left: 25%;
+    width:100%;
+}
+

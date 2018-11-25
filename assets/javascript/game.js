@@ -186,6 +186,7 @@ $(document).ready(function(){
                 randomNumber = Math.floor(Math.random() * (120 - 19 +1) + 19);
                 $('#winningNumber').text(randomNumber);
             }
+            
     
     })
 })
