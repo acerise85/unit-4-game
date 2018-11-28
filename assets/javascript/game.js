@@ -39,8 +39,11 @@ $(document).ready(function(){
                 randomNumber = Math.floor(Math.random() * (120 - 19 +1) + 19);
                 $('#winningNumber').text(randomNumber);
                 blue = 0;
-                blueNumbers = Math.floor(Math.random() * (12 - 1) + 1);
-                
+                blueNumbers = Math.floor(Math.random() * (12 - 1) + 1); 
+                if (blue === red && green && purple){
+
+                    blueNumbers = Math.floor(Math.random() * (12 - 1) + 1);
+                }
             }
             else if (guessSum >= randomNumber){
     
@@ -84,6 +87,10 @@ $(document).ready(function(){
             $('#winningNumber').text(randomNumber);
             green = 0;
             greenNumbers = Math.floor(Math.random() * (12 - 1) + 1);
+            if (green === blue && red && purple){
+
+                greenNumbers = Math.floor(Math.random() * (12 - 1) + 1);
+            }
         }
             else if (guessSum >= randomNumber){
     
@@ -127,6 +134,10 @@ $(document).ready(function(){
             $('#winningNumber').text(randomNumber);
             red = 0;
             redNumbers = Math.floor(Math.random() * (12 - 1) + 1);
+            if (red === blue && green && purple){
+
+                redNumbers = Math.floor(Math.random() * (12 - 1) + 1);
+            }
             }   
             else if (guessSum >= randomNumber){
     
@@ -171,6 +182,10 @@ $(document).ready(function(){
             $('#winningNumber').text(randomNumber);
             purple = 0;
             purpleNumbers = Math.floor(Math.random() * (12 - 1) + 1);
+            if (purple === blue && green && red){
+
+                purpleNumbers = Math.floor(Math.random() * (12 - 1) + 1);
+            }
             }
             else if (guessSum >= randomNumber){
     
