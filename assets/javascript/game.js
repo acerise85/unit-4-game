@@ -21,14 +21,12 @@ $(document).ready(function(){
         $('#blueCrystal').on('click',function(){
             if (blue === red && green && purple){
 
-                redNumbers = Math.floor(Math.random() * (12 - 1) + 1);
+                blueNumbers = Math.floor(Math.random() * (12 - 1) + 1);
             }
             blue = blueNumbers;    
             guessSum +=blue;
             document.getElementById('guessSum').innerHTML = guessSum;
-
-            console.log(blue);
-            console.log(guessSum);   
+ 
             //If statement to determine win or loss in game
             if ( guessSum === randomNumber){
 
@@ -36,11 +34,12 @@ $(document).ready(function(){
                 win++;
                 
                 document.getElementById('win').innerHTML = win;
-                // var randomNumber = Math.floor(Math.random() * (120 - 19 +1) + 19);
                 guessSum = 0;
                 randomNumber = 0;
                 randomNumber = Math.floor(Math.random() * (120 - 19 +1) + 19);
                 $('#winningNumber').text(randomNumber);
+                blue = 0;
+                blueNumbers = Math.floor(Math.random() * (12 - 1) + 1);
                 
             }
             else if (guessSum >= randomNumber){
@@ -49,11 +48,12 @@ $(document).ready(function(){
                 lose++;
                 
                 document.getElementById('lose').innerHTML = lose;
-                // var randomNumber = Math.floor(Math.random() * (120 - 19 +1) + 19);
                 guessSum = 0;
                 randomNumber = 0;
                 randomNumber = Math.floor(Math.random() * (120 - 19 +1) + 19);
                 $('#winningNumber').text(randomNumber);
+                blue = 0;
+                blueNumbers = Math.floor(Math.random() * (12 - 1) + 1);
             }
         
         })
@@ -71,8 +71,6 @@ $(document).ready(function(){
             guessSum +=green;
             document.getElementById('guessSum').innerHTML = guessSum;
 
-            console.log(green);   
-            console.log(guessSum);
             //If statement to determine win or loss in game
             if ( guessSum === randomNumber){
 
@@ -80,11 +78,12 @@ $(document).ready(function(){
                 win++;
                 
             document.getElementById('win').innerHTML = win;
-            // var randomNumber = Math.floor(Math.random() * (120 - 19 +1) + 19);
             guessSum = 0;
             randomNumber = 0;
             randomNumber = Math.floor(Math.random() * (120 - 19 +1) + 19);
             $('#winningNumber').text(randomNumber);
+            green = 0;
+            greenNumbers = Math.floor(Math.random() * (12 - 1) + 1);
         }
             else if (guessSum >= randomNumber){
     
@@ -92,13 +91,13 @@ $(document).ready(function(){
                 lose++;
                 
                 document.getElementById('lose').innerHTML = lose;
-                // var randomNumber = Math.floor(Math.random() * (120 - 19 +1) + 19);
                 guessSum = 0;
                 randomNumber = 0;
                 randomNumber = Math.floor(Math.random() * (120 - 19 +1) + 19);
                 $('#winningNumber').text(randomNumber);
+                green = 0;
+                greenNumbers = Math.floor(Math.random() * (12 - 1) + 1);
             }
-                  //if win/lose alert 
         
         })
 
@@ -115,8 +114,6 @@ $(document).ready(function(){
         guessSum +=red; 
         document.getElementById('guessSum').innerHTML = guessSum;
 
-        console.log(red);   
-        console.log(guessSum);
         //If statement to determine win or loss in game
             if ( guessSum === randomNumber){
 
@@ -124,11 +121,12 @@ $(document).ready(function(){
                 win++;
                 
             document.getElementById('win').innerHTML = win;
-            // var randomNumber = Math.floor(Math.random() * (120 - 19 +1) + 19);
             guessSum = 0;
             randomNumber = 0;
             randomNumber = Math.floor(Math.random() * (120 - 19 +1) + 19);
             $('#winningNumber').text(randomNumber);
+            red = 0;
+            redNumbers = Math.floor(Math.random() * (12 - 1) + 1);
             }   
             else if (guessSum >= randomNumber){
     
@@ -136,11 +134,12 @@ $(document).ready(function(){
             lose++;
              
             document.getElementById('lose').innerHTML = lose;
-            // var randomNumber = Math.floor(Math.random() * (120 - 19 +1) + 19);
             guessSum = 0;
             randomNumber = 0;
             randomNumber = Math.floor(Math.random() * (120 - 19 +1) + 19);
             $('#winningNumber').text(randomNumber);
+            red = 0;
+            redNumbers = Math.floor(Math.random() * (12 - 1) + 1);
         }
           
     })
@@ -159,8 +158,6 @@ $(document).ready(function(){
         guessSum +=purple;
         document.getElementById('guessSum').innerHTML = guessSum;
 
-        console.log(purple);   
-        console.log(guessSum);
         //If statement to determine win or loss in game
             if ( guessSum === randomNumber){
 
@@ -168,11 +165,12 @@ $(document).ready(function(){
                 win++;
                 
             document.getElementById('win').innerHTML = win;
-            // var randomNumber = Math.floor(Math.random() * (120 - 19 +1) + 19);
             guessSum = 0;
             randomNumber = 0;
             randomNumber = Math.floor(Math.random() * (120 - 19 +1) + 19);
             $('#winningNumber').text(randomNumber);
+            purple = 0;
+            purpleNumbers = Math.floor(Math.random() * (12 - 1) + 1);
             }
             else if (guessSum >= randomNumber){
     
@@ -180,14 +178,13 @@ $(document).ready(function(){
                 lose++;
                  
                 document.getElementById('lose').innerHTML = lose;
-                // var randomNumber = Math.floor(Math.random() * (120 - 19 +1) + 19);
                 guessSum = 0;
                 randomNumber = 0;
                 randomNumber = Math.floor(Math.random() * (120 - 19 +1) + 19);
                 $('#winningNumber').text(randomNumber);
-            }
-            
-    
+                purple = 0;
+                purpleNumbers = Math.floor(Math.random() * (12 - 1) + 1);
+            }   
     })
 })
 
